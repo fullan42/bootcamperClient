@@ -1,4 +1,4 @@
-// src/api/fakeapi.js
+// src/pages/fakeapi.js
 
 class FakeApi {
   constructor() {

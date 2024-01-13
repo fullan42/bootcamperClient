@@ -20,7 +20,7 @@ const styles = {
     m-8 0
   `,
   cardContainer: `
-    flex justify-center items-center
+    flex flex-wrap justify-center items-center
   `,
 };
 
