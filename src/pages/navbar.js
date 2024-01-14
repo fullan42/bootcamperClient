@@ -1,14 +1,22 @@
-// components/Navbar.js
+// components/navbar.js
 
 import Link from 'next/link';
 
 const Navbar = () => {
     return (
-        <nav className="bg-teal-500 p-4">
+        <nav className="bg-white p-4">
             <div className="container mx-auto flex justify-between items-center">
                 <div>
-                    <Link className="text-white text-lg font-serif" href="/">
+                    <h3 className="text-black text-lg font-serif">
                         Bootcamper
+                    </h3>
+                </div>
+                <div  >
+                    <Link className='p-4'  href='/'>
+                        Sign-in
+                    </Link>
+                        <Link href='/'>
+                        Register
                     </Link>
                 </div>
             </div>

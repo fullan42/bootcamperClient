@@ -1,6 +1,6 @@
-import Card from "@/pages/BootcampCard";
+import Card from "../pages/bootcamptcard";
 
-const BootcampCardList = () => {
+const Bootcampcardlist = () => {
     const bootcamps = [
         {
       "link": "https://www.patika.dev/bootcamp/solana-acceleration-bootcamp",
@@ -725,4 +725,4 @@ const BootcampCardList = () => {
     );
 };
 
-export default BootcampCardList;
+export default Bootcampcardlist;
