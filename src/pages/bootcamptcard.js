@@ -1,4 +1,4 @@
-// components/Card.js
+// pages/Card.js
 import React from 'react';
 
 const Card = ({name, description, img_url}) => (

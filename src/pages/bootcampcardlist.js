@@ -1,4 +1,4 @@
-import Card from "../pages/bootcamptcard";
+import Card from "@/pages/bootcamptcard";
 
 const Bootcampcardlist = () => {
     const bootcamps = [

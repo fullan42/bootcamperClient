@@ -1,4 +1,4 @@
-// components/navbar.js
+// pages/navbar.js
 
 import Link from 'next/link';
 
