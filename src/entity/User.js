@@ -45,14 +45,3 @@ const userApi = {
 };
 
 // Kullanıcı bilgilerini al ve devamında bootcamp bilgilerini al
-userApi.getUserData()
-  .then((user) => userApi.getBootcampInfo(user))
-  .then((infoForUser) => {
-    console.log("User Information:");
-    console.log(`Name: ${infoForUser.user.name}`);
-    console.log(`Email: ${infoForUser.user.email}`);
-    console.log(`Password: ${infoForUser.user.password}`);
-    console.log(`Confirm Password: ${infoForUser.user.confirmPassword}`);
-    console.log(`Reach Bootcamp: ${infoForUser.reachBootcamp}`);
-  })
-  .catch((error) => console.error(error));

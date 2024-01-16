@@ -1,5 +1,11 @@
-import Card from "@/pages/bootcamptcard";
-const Bootcampcardlist = () => {
+// main.js
+import BootcampCoderSpace from './bootcampCoderSpace.js';
+import FakeAPI from './fakeapi.js';
+
+// Fake API oluştur
+const fakeAPI = new FakeAPI();
+
+// Örnek bootcamp oluştur
     const bootcamps = [
         {
       "link": "https://www.patika.dev/bootcamp/solana-acceleration-bootcamp",
@@ -291,13 +297,8 @@ const Bootcampcardlist = () => {
     }
     ];
 
-    return (
-        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-4 mx-60">
-            {bootcamps.map((bootcamp, index) => (
-                <Card key={index} {...bootcamp} />
-            ))}
-        </div>
-    );
-};
-
-export default Bootcampcardlist;
+for (let bootcamp of bootcamps) {
+  const bootcampObject = BootcampCoderSpace.createFromObject(bootcamp);
+  fakeAPI.addBootcamp(bootcampObject);
+}
+console.log(fakeAPI.getBootcamps());
