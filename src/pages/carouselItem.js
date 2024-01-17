@@ -1,16 +1,8 @@
-import React, { useState } from "react";
-import { Typography, Button } from "@material-tailwind/react";
+
+import { Typography } from "@material-tailwind/react";
+import Link from "next/link";
 
 function CarouselItem({ imageSrc, title, description }) {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handlePrevClick = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? 2 : prevSlide - 1));
-  };
-
-  const handleNextClick = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 2 ? 0 : prevSlide + 1));
-  };
 
   return (
     <div className="relative h-full w-full">
@@ -33,12 +25,12 @@ function CarouselItem({ imageSrc, title, description }) {
             {description}
           </Typography>
           <div className="flex justify-center gap-2">
-            <Button color="white" onClick={handlePrevClick}>
+            <Link color="white" href="/">
               Explore
-            </Button>
-            <Button color="white" onClick={handleNextClick}>
+            </Link>
+            <Link color="white" href="/" >
               Gallery
-            </Button>
+            </Link >
           </div>
         </div>
       </div>

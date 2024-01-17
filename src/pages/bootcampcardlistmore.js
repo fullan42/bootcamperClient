@@ -1,5 +1,11 @@
+
+
+
+
 import Card from "@/pages/bootcamptcard";
-const Bootcampcardlist = () => {
+import React from "react";
+
+const Bootcampcardlistmore = () => {
     const bootcamps = [
         {
       "link": "https://www.patika.dev/bootcamp/solana-acceleration-bootcamp",
@@ -292,12 +298,22 @@ const Bootcampcardlist = () => {
     ];
 
     return (
-        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-4 mx-10">
-            {bootcamps.map((bootcamp, index) => (
-                <Card key={index} {...bootcamp} />
-            ))}
-        </div>
-    );
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-3 mx-52">
+        {bootcamps.map((bootcamp, index) => (
+            <React.Fragment key={index}>
+                <Card {...bootcamp} />
+                {index === 6 && (
+                    <React.Fragment key={index + 1}>
+                        <Card {...bootcamp} />
+                    </React.Fragment>
+                )}
+            </React.Fragment>
+        ))}
+    </div>
+);
 };
 
-export default Bootcampcardlist;
+export default Bootcampcardlistmore;
+
+
+

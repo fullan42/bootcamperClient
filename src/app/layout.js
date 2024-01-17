@@ -6,17 +6,18 @@ import styles from '../styles/bootcampcardstyle.jsx';
 import BootcampCardList from "@/pages/bootcampcardlist";
 import Navbar from "@/pages/navbar";
 import Carouselbootcamp, {CarouselWithContent} from "@/pages/CarouselWithContent";
+import Falanfilan from "@/pages/falanfilan";
 
 
 
 
 const Home = () => {
     return (
-        <div>
+        <div className="bg-gray-200">
 
 
             <Navbar/>
-            <CarouselWithContent> </CarouselWithContent>
+            <Falanfilan> </Falanfilan>
             <BootcampCardList></BootcampCardList>
 
 
