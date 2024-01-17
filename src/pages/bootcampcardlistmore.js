@@ -2,7 +2,7 @@
 
 
 
-import Card from "@/pages/bootcamptcard";
+import Card from "@/pages/cardBootcamp";
 import React from "react";
 
 const Bootcampcardlistmore = () => {

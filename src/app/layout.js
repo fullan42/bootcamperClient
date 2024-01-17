@@ -1,9 +1,9 @@
 
 
 import React from 'react';
-import Card from '@/pages/bootcamptcard.js';
+import Card from '@/pages/cardBootcamp.js';
 import styles from '../styles/bootcampcardstyle.jsx';
-import BootcampCardList from "@/pages/bootcampcardlist";
+import BootcampCardList from "@/pages/cardList";
 import Navbar from "@/pages/navbar";
 import Carouselbootcamp, {CarouselWithContent} from "@/pages/CarouselWithContent";
 import Falanfilan from "@/pages/falanfilan";

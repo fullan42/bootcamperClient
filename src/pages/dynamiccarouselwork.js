@@ -1,4 +1,0 @@
-import { DynamicCarousel } from "./DynamicCarousel";
-
-
-
