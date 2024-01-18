@@ -6,7 +6,7 @@ import styles from '../styles/bootcampcardstyle.jsx';
 import BootcampCardList from "@/pages/cardList";
 import Navbar from "@/pages/navbar";
 import Carouselbootcamp, {CarouselWithContent} from "@/pages/CarouselWithContent";
-import Falanfilan from "@/pages/falanfilan";
+import Falanfilan from "@/pages/HomePageFirstSection";
 
 
 

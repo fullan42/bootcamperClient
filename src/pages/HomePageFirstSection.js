@@ -1,4 +1,4 @@
-const falanfilan = () => {
+const homePageFirstSection = () => {
     const imagePath = "";
 
     return (
@@ -35,4 +35,4 @@ const falanfilan = () => {
     );
 };
 
-export default falanfilan;
+export default homePageFirstSection;
