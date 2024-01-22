@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Card = ({ name, description, img_url, link }) => (
+const Card = ({ link, name, img_url, date,place }) => (
   <div className="card rounded-lg bg-white overflow-hidden">
     <img src={img_url} alt={name} className="object-cover" />
     <div className="text-lg w-full mt-5 h-10">

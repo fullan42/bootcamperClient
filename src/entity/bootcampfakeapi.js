@@ -1,9 +1,9 @@
 // main.js
 import BootcampCoderSpace from './bootcampCoderSpace.js';
-import FakeAPI from './fakeapi.js';
+import TechService from '../service/techService.js';
 
 // Fake API oluştur
-const fakeAPI = new FakeAPI();
+const fakeAPI = new TechService();
 
 // Örnek bootcamp oluştur
     const bootcamps = [
